@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "20016445926",
+    "project_id": "linko-chat-application",
+    "storage_bucket": "linko-chat-application.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:20016445926:android:26e33f1acc224a6989fe27",
+        "android_client_info": {
+          "package_name": "com.ex.linko"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "20016445926-2vrtqa26ful0002iopm0ml5hhf1bkoen.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDn6_sasjmBNmkdyMpsdIXn61AsMn6sDbg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "20016445926-2vrtqa26ful0002iopm0ml5hhf1bkoen.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
