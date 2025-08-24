@@ -2,12 +2,12 @@ package com.ex.linko.viewmodel
 
 import androidx.lifecycle.ViewModel
 import com.ex.linko.model.AuthState
-import com.ex.linko.repository.AuthRepo
+import com.ex.linko.repository.AuthRepository
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 
-class AuthViewModel(private val repo: AuthRepo = AuthRepo()): ViewModel() {
+class AuthViewModel(private val repo: AuthRepository = AuthRepository()): ViewModel() {
 
     private val _authState = MutableStateFlow<AuthState>(AuthState.Idle)
     val authState: StateFlow<AuthState> = _authState.asStateFlow()

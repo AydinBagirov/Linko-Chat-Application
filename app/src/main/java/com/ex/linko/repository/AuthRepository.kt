@@ -2,7 +2,7 @@ package com.ex.linko.repository
 
 import com.google.firebase.auth.FirebaseAuth
 
-class AuthRepo {
+class AuthRepository {
     private val auth = FirebaseAuth.getInstance()
 
     fun signUp(email: String, password: String, onResult: (Boolean, String?) -> Unit){

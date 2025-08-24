@@ -55,6 +55,7 @@ dependencies {
     implementation(libs.androidx.credentials.play.services.auth)
     implementation(libs.googleid)
     implementation(libs.firebase.messaging)
+    implementation(libs.firebase.firestore)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -81,4 +82,6 @@ dependencies {
     implementation("com.google.android.libraries.identity.googleid:googleid:1.1.1")
     //FIREBASE MESSAGING
     implementation("com.google.firebase:firebase-messaging:25.0.0")
+    //FIREBASE FIRESTORE
+    implementation("com.google.firebase:firebase-firestore:26.0.0")
 }
