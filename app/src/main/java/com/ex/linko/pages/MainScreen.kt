@@ -35,10 +35,10 @@ fun MainScreen() {
             startDestination = BottomNavScreen.Home.route,
             modifier = Modifier.fillMaxSize()
         ) {
-            composable(BottomNavScreen.Home.route) { PlaceholderScreen("Ana Ekran") }
-            composable(BottomNavScreen.Search.route) { PlaceholderScreen("Arama") }
-            composable(BottomNavScreen.Activities.route) { PlaceholderScreen("Hareketler") }
-            composable(BottomNavScreen.Profile.route) { PlaceholderScreen("Profil") }
+            composable(BottomNavScreen.Home.route) { MainPage() }
+            composable(BottomNavScreen.Search.route) { SearchPage() }
+            composable(BottomNavScreen.Activities.route) { ActivityPage() }
+            composable(BottomNavScreen.Profile.route) { ProfilePage() }
         }
     }
 }

@@ -12,11 +12,9 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import com.ex.linko.model.AuthState
 import com.ex.linko.pages.AuthScreen
 import com.ex.linko.pages.MainScreen
-import com.ex.linko.pages.ProfileScreen
 import com.ex.linko.ui.theme.LinkoTheme
 import com.ex.linko.viewmodel.AuthViewModel
 import com.ex.linko.viewmodel.UserViewModel
-import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
