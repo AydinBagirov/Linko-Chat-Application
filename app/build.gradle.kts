@@ -1,3 +1,5 @@
+import org.gradle.kotlin.dsl.implementation
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
@@ -63,25 +65,33 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
-    //NAVIGATION
+    // NAVIGATION
     implementation("androidx.navigation:navigation-compose:2.7.5")
-    //GSON
+
+    // GSON
     implementation("com.google.code.gson:gson:2.10.1")
-    //LIVEDATA
+
+    // LIVEDATA
     implementation("androidx.compose.runtime:runtime-livedata:1.6.4")
-    //RETROFIT
+
+    // RETROFIT
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
-    //COIL
+
+    // COIL
     implementation("io.coil-kt:coil-compose:2.6.0")
-    //FIREBASE AUTH
-    implementation("com.google.firebase:firebase-auth:24.0.1")
+
+    // Firebase BoM
     implementation(platform("com.google.firebase:firebase-bom:33.2.0"))
+
+    // Firebase kütüphaneleri (versiyonsuz, BoM kullanıldığı için)
+    implementation("com.google.firebase:firebase-auth-ktx")
+    implementation("com.google.firebase:firebase-firestore-ktx")
+    implementation("com.google.firebase:firebase-storage-ktx")
+    implementation("com.google.firebase:firebase-messaging-ktx")
+
+    // Credentials / Google ID
     implementation("androidx.credentials:credentials:1.5.0")
     implementation("androidx.credentials:credentials-play-services-auth:1.5.0")
     implementation("com.google.android.libraries.identity.googleid:googleid:1.1.1")
-    //FIREBASE MESSAGING
-    implementation("com.google.firebase:firebase-messaging:25.0.0")
-    //FIREBASE FIRESTORE
-    implementation("com.google.firebase:firebase-firestore:26.0.0")
 }

@@ -11,6 +11,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.ex.linko.model.AuthState
 import com.ex.linko.pages.AuthScreen
+import com.ex.linko.pages.MainScreen
 import com.ex.linko.pages.ProfileScreen
 import com.ex.linko.ui.theme.LinkoTheme
 import com.ex.linko.viewmodel.AuthViewModel
@@ -31,10 +32,11 @@ class MainActivity : ComponentActivity() {
 
             // Auth durumuna göre ekranı seçiyoruz
             when(authState) {
-                is AuthState.Success -> ProfileScreen(
-                    viewModel = userViewModel,
-                    currentUser = FirebaseAuth.getInstance().currentUser!!
-                )
+                is AuthState.Success -> MainScreen()
+//                    ProfileScreen(
+//                    viewModel = userViewModel,
+//                    currentUser = FirebaseAuth.getInstance().currentUser!!
+//                )
                 else -> AuthScreen(viewModel = authViewModel)
             }
         }
